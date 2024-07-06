@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="score.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoccer Game</title>
+    
+</head>
+<body onload="Timer()">
+<div class="soccer_el">Welcome To International Soccer Ball Game</div>
+<div class="game">
+    <div class="soc_el"><h1>Score Board</h1></div>
+    <div class="container">
+        <div class="player1-container">
+            <div class="Player1">Player 1</div>
+            <div id="count_el" class="box p1">Score: 0</div>
+            <div class="score1-row">
+                <button class="score1" onclick="incrementP1()">+1</button>
+                <button class="score2" onclick="IncrementP1()">+2</button>
+            </div>
+        </div>
+        <div id="Winner" class="winner">Winner: </div>
+        <div class="player2-container">
+            <div class="Player2">Player 2</div>
+            <div id="count_el2" class="box p2">Score: 0</div>
+            <div class="score2-row">
+                <button id="increment1" class="score11" onclick="incrementP2()">+1</button>
+                <button id="increment2" class="score22" onclick="IncrementP2()">+2</button>
+            </div>
+        </div>
+    </div>
+    <div id="Timer" class="timer" >Timer: 00:00</div>
+</div>
+<script src="score.js"></script>
+</body>
+</html>
